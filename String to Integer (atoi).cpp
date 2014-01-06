@@ -15,7 +15,7 @@ int atoi(const char *str) {
 	int ret = 0;
 	for(;*str;str++){
 		if(!isdigit(*str)) return isN * ret;
-		if(INT_MAX/10>=ret) ret *=10;
+		if(INT_MAX/10>=ret) ret *=10; //目前所想到的唯一能正确处理的方法
 		else return isN==-1?INT_MIN:INT_MAX;
 		int digit = *str-'0';
 		if(INT_MAX-digit>=ret) ret += digit;
